@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Still Here: Endangered Animals</title>
+<meta name="description" content="Ten species on the IUCN Red List, how many are left, and what threatens them.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top">Still Here</a>
+  <nav aria-label="Sections">
+    <a href="#species">Species</a>
+    <a href="#threats">Threats</a>
+    <a href="#help">How to help</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1>Still here.</h1>
+    <p class="lede">Every animal on this page is alive today. Some number in the thousands, others in the dozens. Here is how many are left, where they live, and what puts them at risk.</p>
+  </section>
+
+  <section id="species" class="wrap" aria-labelledby="species-h">
+    <h2 id="species-h">Ten species on the Red List</h2>
+    <p class="note">Status follows the IUCN Red List. Population figures are recent estimates and change often.</p>
+    <div class="controls">
+      <div class="filters" role="group" aria-label="Filter by status" id="filters"></div>
+      <label class="search">
+        <span class="sr">Search species</span>
+        <input type="search" id="search" placeholder="Search by name or place">
+      </label>
+    </div>
+    <p id="empty" class="empty" hidden>No species match. Clear the search or choose All.</p>
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <section id="threats" class="wrap" aria-labelledby="threats-h">
+    <h2 id="threats-h">What puts them at risk</h2>
+    <dl class="threats">
+      <div><dt>Habitat loss</dt><dd>Forests are cleared for farming, palm oil and roads. Animals are left with patches too small to breed in.</dd></div>
+      <div><dt>Poaching and trade</dt><dd>Ivory, horn, skins and live animals are sold illegally, and small populations cannot absorb the losses.</dd></div>
+      <div><dt>Fishing gear</dt><dd>Whales, porpoises and turtles drown in nets and lines meant for other catches.</dd></div>
+      <div><dt>Climate change</dt><dd>Warming shifts the habitats, food and seasons that species depend on, especially in mountains and oceans.</dd></div>
+    </dl>
+  </section>
+
+  <section id="help" class="wrap" aria-labelledby="help-h">
+    <h2 id="help-h">What helps</h2>
+    <ul class="help">
+      <li><strong>Choose certified products.</strong> Look for FSC wood and paper, MSC seafood and RSPO palm oil.</li>
+      <li><strong>Support habitat protection.</strong> Give to conservation groups that buy, restore or patrol wild land.</li>
+      <li><strong>Never buy wildlife products.</strong> Skip ivory, shell, fur and exotic pets, even when sold as souvenirs.</li>
+      <li><strong>Share what you learn.</strong> Most people don’t know how few of these animals are left.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Check current numbers and status at the <a href="https://www.iucnredlist.org" rel="noopener">IUCN Red List</a>.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
